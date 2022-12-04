@@ -8,6 +8,7 @@ class SolarSystem extends React.Component {
     const planetas = planets.map((planet, index) => {
       const { name } = planet;
       const { image } = planet;
+      // Aqui estou usando o index como key pois a lista não é dinâmica.
       return <PlanetCard key={ index } planetName={ name } planetImage={ image } />;
     });
     return (
